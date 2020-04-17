@@ -1,34 +1,47 @@
-public class Person{
+import java.util.*;
 
-   public Person() {
+public class Person {
    
-   }
-
-   private String paternal;
-   private String maternal;
-   private String child1;
-   private String child2;
-   private String child3;
+	//Fields
+   private String name;
+   private String mom;
+   private String dad;
+   private ArrayList<String> children;
    
-   public void getPaternal() {
-      
-      paternal = "Henry VII";
-      System.out.println(paternal);
-      
+	//constructor
+   public Person(String name) {
+      this.name = name;
+      children = new ArrayList<String>();
    }
    
-   public void getMaternal() {
-   
-      maternal = "Elizabeth of York";
-   
+	//getters, setters
+   public String getName() {
+      return name;
    }
    
-   public void getChildren() {
-      
-      child1 = "Mary I";
-      child2 = "Elizabeth I";
-      child3 = "Edward VI";
-      
+   public String getMom() {
+      return mom;
    }
 
+   public void setMom(String mom) {
+      this.mom = mom;
+   }
+
+   public String getDad() {
+      return dad;
+   }
+
+   public void setDad(String dad) {
+      this.dad = dad;
+   }
+   
+	//I made Children an ArrayList since there could be more than one.
+   public ArrayList<String> getChildren() {
+      return children;
+   }
+
+   public void setChildren(String child) {
+      children.add(child);
+   }
+	
 }
