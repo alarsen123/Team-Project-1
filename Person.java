@@ -1,3 +1,9 @@
+//Vinh Nguyen, Jae Cho, Alex Larsen
+//Team Project 1
+
+//This class creates fields for a person's name and lineage (mom, dad, and children).
+//It contains a Person constructor, as well as getters and setters for the fields
+
 import java.util.*;
 
 public class Person {
